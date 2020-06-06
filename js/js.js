@@ -1,28 +1,31 @@
 
-function gameplay(){
-    const { value: text } = await Swal.fire({
-        input: 'text',
-        inputPlaceholder: 'May I have your name, please?'
-      })
-      
-      if (text) {
-        Swal.fire({
-        title: "Get bored?",
-  text: "Let the games....begin.",
-  imageUrl: "./img/illusions.jpg",
-  imageWidth: 600,
-  imageHeight: 300,
-  imageAlt: "Custom image",
-});
-}
-}
+function gameplay() {
 
+  Swal.fire({
+    title: '請輸入名字：',
+    input: 'text',
+    inputPlaceholder: '路人甲',
+    inputAttributes: {
+      'aria-label': 'Type your message here'
+    },
+    showCancelButton: true
+  })
+  
+  if (text) {
+    Swal.fire(text)
+  }
+  
+  
+  
+  
+  // Swal.fire({
+  //   title: 'Sweet!',
+  //   text: 'Modal with a custom image.',
+  //   imageUrl: 'https://unsplash.it/400/200',
+  //   imageWidth: 400,
+  //   imageHeight: 200,
+  //   imageAlt: 'Custom image',
+  // })
+
+}
 gameplay();
-
-//   Swal.fire({
-//     position: 'top-end',
-//     icon: 'success',
-//     title: 'Your work has been saved',
-//     showConfirmButton: false,
-//     timer: 1500
-//   });
