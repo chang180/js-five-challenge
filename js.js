@@ -262,12 +262,12 @@ function start() {
                                       Swal.fire({ //破臺
                                         width: 1000,
                                         title: "恭喜，全通關",
-                                        text: "歡迎進入3D的世界，想再玩一次嗎？(非玩不可 ^_^ )",
+                                        text: "歡迎進入3D的世界，看得出這張圖了吧？",
                                         allowOutsideClick: false,
                                         imageUrl: 'img/cong.jpg',
                                         imageHeight: 900,
                                         imageHeight: 700,
-                                      }).then(() => location.reload());
+                                      }).then(() => location.assign("clear/index.html"));
                                     })
                                   }
                                 })
